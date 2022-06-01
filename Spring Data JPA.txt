@@ -22,4 +22,5 @@ spring.jpa.properties.hibernate.format_sql=true - we want the SQL to be formatte
 We've created a class with some properties, we aren't using Spring Data JPA yet, we'll map it as a table with these annotations: @Entity, @Table
 More about these annotations in my first spring boot project
 
-The program is not going to work yet, as we need to determine a primary key, which we can do by using the @Id annotation 
+The program is not going to work yet, as we need to determine a primary key, which we can do by using the @Id annotation
+we want a BIG SERIAL data for the primary key/id, that's why we will use sequence (in more detail at github/spring-boot-first)  
