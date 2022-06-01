@@ -1,0 +1,8 @@
+Spring Data JPA - Java Persistence API
+
+implementations:
+	hibernate - most popular one, takes a java object and maps java classes (ORM {object relational mapping}) to databases as tables, so we can perform
+		    various operations
+
+Reduces the amount of code that has to be written, gives us a lot of generated queries and access to our databases without having to write a single line of code
+The implementation with Spring Boot applications is very simple and intuitive 
