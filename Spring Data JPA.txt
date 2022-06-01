@@ -14,4 +14,12 @@ in application.properties we have already some things set up for us, so that mak
 spring.datasource.url - the url of the server
 spring.datasource.username - username to connect to the database, no need to specify
 spring.datasource.password - the password to the database account, no need to specify
+spring.jpa.hibernate.ddl-auto=create-drop - when the program's stopped everything's dropped
+spring.jpa.show-sql=true - about the sql statements that hibernate will generate
+spring.jpa.properties.hibernate.dialect = the dialect used, which is Postgres in our case
+spring.jpa.properties.hibernate.format_sql=true - we want the SQL to be formatted
 
+We've created a class with some properties, we aren't using Spring Data JPA yet, we'll map it as a table with these annotations: @Entity, @Table
+More about these annotations in my first spring boot project
+
+The program is not going to work yet, as we need to determine a primary key, which we can do by using the @Id annotation 
