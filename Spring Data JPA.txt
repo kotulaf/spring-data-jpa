@@ -6,3 +6,12 @@ implementations:
 
 Reduces the amount of code that has to be written, gives us a lot of generated queries and access to our databases without having to write a single line of code
 The implementation with Spring Boot applications is very simple and intuitive 
+
+First we are starting with a bare Spring Boot project
+pom.xml is a maven configuration file with e.g. dependencies, the only ones that i care about are org.springframework.boot and org.postgresql
+
+in application.properties we have already some things set up for us, so that makes it easier:
+spring.datasource.url - the url of the server
+spring.datasource.username - username to connect to the database, no need to specify
+spring.datasource.password - the password to the database account, no need to specify
+
