@@ -26,3 +26,14 @@ The program is not going to work yet, as we need to determine a primary key, whi
 we want a BIG SERIAL data for the primary key/id, that's why we will use sequence (in more detail at github/spring-boot-first)  
 
 We can also annotate columns and they have properties too, for example name, updatable, nullable, columnDefinition (what type the variables are)
+
+Inside my @Table annotation I created a uniqueCoinstrant, which takes an array, in which we write e.g. @UniqueConstraint(name="example", columnNames="exampleColumns")
+when we create unique constraints we can also do so by typing @Column(name="name", unique=true), however, we used the first method as it gives us reassurance that the 
+variable will be named correctly in the table
+
+
+Spring Data JPA Repository
+a concept, which helps us realize our own queries, and use already pre-existing ones such as put, delete and edit
+the repository is simply a Data Access Layer, which we will create
+there are a few repositories you can extend from, we will use JPARepository, which already extends a couple more
+our interface will extend JPARepository, so we can apply our own queries to the existing ones
